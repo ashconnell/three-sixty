@@ -1,6 +1,6 @@
 {
   "name": "three-sixty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A ThreeJS extension for taking equirectangular screenshots of a scene",
   "main": "src/index.js",
   "scripts": {

@@ -93,7 +93,22 @@
                 scene.add(skybox);
             }
 
-            function update () {
+            // add cube
+
+            var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+            var material = new THREE.MeshNormalMaterial();
+            var cube = new THREE.Mesh(geometry, material);
+            cube.position.z = -1;
+            scene.add(cube);
+
+            var lastRender = 0;
+            function update (timestamp) {
+                var delta = Math.min(timestamp - lastRender, 500);
+                lastRender = timestamp;
+
+                // Apply rotation to cube mesh
+                cube.rotation.y += delta * 0.0006;
+
                 requestAnimationFrame(update);
 
                 controls.update();
