@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/contact/n/bin/node',
+1 verbose cli   '/Users/contact/n/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'eligrey/canvas-toBlob.js',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of /Users/contact/DevWeb/envoke/three-lens/package.json
+5 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/browserify/package.json
+6 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/del/package.json
+7 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/gulp/package.json
+8 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/gulp-connect/package.json
+9 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/gulp-gh-pages/package.json
+10 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/gulp-if/package.json
+11 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/gulp-uglify/package.json
+12 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/lodash/package.json
+13 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/lodash.defaults/package.json
+14 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/md5/package.json
+15 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/run-sequence/package.json
+16 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/three/package.json
+17 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/vinyl-buffer/package.json
+18 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/vinyl-source-stream/package.json
+19 verbose installManyTop reading scoped package data from /Users/contact/DevWeb/envoke/three-lens/node_modules/webvr-polyfill/package.json
+20 info package.json webvr-polyfill@0.2.0 No repository field.
+21 info package.json webvr-polyfill@0.2.0 license should be a valid SPDX license expression
+22 verbose readDependencies loading dependencies from /Users/contact/DevWeb/envoke/three-lens/package.json
+23 silly cache add args [ 'eligrey/canvas-toBlob.js', null ]
+24 verbose cache add spec eligrey/canvas-toBlob.js
+25 silly cache add parsed spec Result {
+25 silly cache add   raw: 'eligrey/canvas-toBlob.js',
+25 silly cache add   scope: null,
+25 silly cache add   name: null,
+25 silly cache add   rawSpec: 'eligrey/canvas-toBlob.js',
+25 silly cache add   spec: 'github:eligrey/canvas-toBlob.js',
+25 silly cache add   type: 'hosted',
+25 silly cache add   hosted:
+25 silly cache add    { type: 'github',
+25 silly cache add      ssh: 'git@github.com:eligrey/canvas-toBlob.js.git',
+25 silly cache add      sshUrl: 'git+ssh://git@github.com/eligrey/canvas-toBlob.js.git',
+25 silly cache add      httpsUrl: 'git+https://github.com/eligrey/canvas-toBlob.js.git',
+25 silly cache add      gitUrl: 'git://github.com/eligrey/canvas-toBlob.js.git',
+25 silly cache add      shortcut: 'github:eligrey/canvas-toBlob.js',
+25 silly cache add      directUrl: 'https://raw.githubusercontent.com/eligrey/canvas-toBlob.js/master/package.json' } }
+26 verbose addRemoteGit caching eligrey/canvas-toBlob.js
+27 verbose addRemoteGit eligrey/canvas-toBlob.js is a repository hosted by github
+28 silly tryGitProto attempting to clone git://github.com/eligrey/canvas-toBlob.js.git
+29 silly tryClone cloning eligrey/canvas-toBlob.js via git://github.com/eligrey/canvas-toBlob.js.git
+30 verbose tryClone git-github-com-eligrey-canvas-toBlob-js-git-2f4cb0a4 not in flight; caching
+31 info git [ 'config', '--get', 'remote.origin.url' ]
+32 silly validateExistingRemote eligrey/canvas-toBlob.js remote.origin.url: git://github.com/eligrey/canvas-toBlob.js.git
+33 verbose validateExistingRemote eligrey/canvas-toBlob.js is updating existing cached remote /Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-2f4cb0a4
+34 info git [ 'fetch', '-a', 'origin' ]
+35 verbose updateRemote git fetch -a origin (git://github.com/eligrey/canvas-toBlob.js.git)
+36 verbose setPermissions eligrey/canvas-toBlob.js set permissions on /Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-2f4cb0a4
+37 verbose resolveHead eligrey/canvas-toBlob.js original treeish: master
+38 info git [ 'rev-list', '-n1', 'master' ]
+39 silly resolveHead eligrey/canvas-toBlob.js resolved treeish: 8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+40 verbose resolveHead eligrey/canvas-toBlob.js resolved Git URL: git://github.com/eligrey/canvas-toBlob.js.git#8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+41 silly resolveHead Git working directory: /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-ff64a0d55e6a/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+42 info git [ 'clone',
+42 info git   '/Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-2f4cb0a4',
+42 info git   '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-ff64a0d55e6a/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+43 verbose cloneResolved eligrey/canvas-toBlob.js clone Cloning into '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-ff64a0d55e6a/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'...
+43 verbose cloneResolved done.
+44 info git [ 'checkout', '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+45 verbose checkoutTreeish eligrey/canvas-toBlob.js checkout Note: checking out '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'.
+45 verbose checkoutTreeish
+45 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+45 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+45 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+45 verbose checkoutTreeish
+45 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+45 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+45 verbose checkoutTreeish
+45 verbose checkoutTreeish   git checkout -b <new-branch-name>
+45 verbose checkoutTreeish
+45 verbose checkoutTreeish HEAD is now at 8316fb3... License clarification
+46 error addLocal Could not install /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-ff64a0d55e6a/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+47 silly tryHTTPS attempting to clone git+https://github.com/eligrey/canvas-toBlob.js.git
+48 silly tryClone cloning eligrey/canvas-toBlob.js via git+https://github.com/eligrey/canvas-toBlob.js.git
+49 verbose tryClone https-github-com-eligrey-canvas-toBlob-js-git-734f4121 not in flight; caching
+50 info git [ 'config', '--get', 'remote.origin.url' ]
+51 silly validateExistingRemote eligrey/canvas-toBlob.js remote.origin.url: https://github.com/eligrey/canvas-toBlob.js.git
+52 verbose validateExistingRemote eligrey/canvas-toBlob.js is updating existing cached remote /Users/contact/.npm/_git-remotes/https-github-com-eligrey-canvas-toBlob-js-git-734f4121
+53 info git [ 'fetch', '-a', 'origin' ]
+54 verbose updateRemote git fetch -a origin (https://github.com/eligrey/canvas-toBlob.js.git)
+55 verbose setPermissions eligrey/canvas-toBlob.js set permissions on /Users/contact/.npm/_git-remotes/https-github-com-eligrey-canvas-toBlob-js-git-734f4121
+56 verbose resolveHead eligrey/canvas-toBlob.js original treeish: master
+57 info git [ 'rev-list', '-n1', 'master' ]
+58 silly resolveHead eligrey/canvas-toBlob.js resolved treeish: 8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+59 verbose resolveHead eligrey/canvas-toBlob.js resolved Git URL: git+https://github.com/eligrey/canvas-toBlob.js.git#8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+60 silly resolveHead Git working directory: /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-516d63da44ad/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+61 info git [ 'clone',
+61 info git   '/Users/contact/.npm/_git-remotes/https-github-com-eligrey-canvas-toBlob-js-git-734f4121',
+61 info git   '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-516d63da44ad/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+62 verbose cloneResolved eligrey/canvas-toBlob.js clone Cloning into '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-516d63da44ad/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'...
+62 verbose cloneResolved done.
+63 info git [ 'checkout', '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+64 verbose checkoutTreeish eligrey/canvas-toBlob.js checkout Note: checking out '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'.
+64 verbose checkoutTreeish
+64 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+64 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+64 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+64 verbose checkoutTreeish
+64 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+64 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+64 verbose checkoutTreeish
+64 verbose checkoutTreeish   git checkout -b <new-branch-name>
+64 verbose checkoutTreeish
+64 verbose checkoutTreeish HEAD is now at 8316fb3... License clarification
+65 error addLocal Could not install /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-516d63da44ad/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+66 silly trySSH attempting to clone git@github.com:eligrey/canvas-toBlob.js.git
+67 silly tryClone cloning eligrey/canvas-toBlob.js via git@github.com:eligrey/canvas-toBlob.js.git
+68 verbose tryClone git-github-com-eligrey-canvas-toBlob-js-git-f5e099e3 not in flight; caching
+69 info git [ 'config', '--get', 'remote.origin.url' ]
+70 silly validateExistingRemote eligrey/canvas-toBlob.js remote.origin.url: git@github.com:eligrey/canvas-toBlob.js.git
+71 verbose validateExistingRemote eligrey/canvas-toBlob.js is updating existing cached remote /Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-f5e099e3
+72 info git [ 'fetch', '-a', 'origin' ]
+73 verbose updateRemote git fetch -a origin (git@github.com:eligrey/canvas-toBlob.js.git)
+74 verbose setPermissions eligrey/canvas-toBlob.js set permissions on /Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-f5e099e3
+75 verbose resolveHead eligrey/canvas-toBlob.js original treeish: master
+76 info git [ 'rev-list', '-n1', 'master' ]
+77 silly resolveHead eligrey/canvas-toBlob.js resolved treeish: 8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+78 verbose resolveHead eligrey/canvas-toBlob.js resolved Git URL: git+ssh://git@github.com/eligrey/canvas-toBlob.js.git#8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+79 silly resolveHead Git working directory: /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-f0c42cb57c23/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+80 info git [ 'clone',
+80 info git   '/Users/contact/.npm/_git-remotes/git-github-com-eligrey-canvas-toBlob-js-git-f5e099e3',
+80 info git   '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-f0c42cb57c23/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+81 verbose cloneResolved eligrey/canvas-toBlob.js clone Cloning into '/var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-f0c42cb57c23/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'...
+81 verbose cloneResolved done.
+82 info git [ 'checkout', '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3' ]
+83 verbose checkoutTreeish eligrey/canvas-toBlob.js checkout Note: checking out '8316fb3ee6d67f68f44089a82ab87bf580d2a5e3'.
+83 verbose checkoutTreeish
+83 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+83 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+83 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+83 verbose checkoutTreeish
+83 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+83 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+83 verbose checkoutTreeish
+83 verbose checkoutTreeish   git checkout -b <new-branch-name>
+83 verbose checkoutTreeish
+83 verbose checkoutTreeish HEAD is now at 8316fb3... License clarification
+84 error addLocal Could not install /var/folders/th/p1bqd84n4dd60gtf4y_zz8140000gn/T/npm-3650-d739313b/git-cache-f0c42cb57c23/8316fb3ee6d67f68f44089a82ab87bf580d2a5e3
+85 verbose stack Error: EISDIR: illegal operation on a directory, read
+85 verbose stack     at Error (native)
+86 verbose cwd /Users/contact/DevWeb/envoke/three-lens
+87 error Darwin 15.3.0
+88 error argv "/Users/contact/n/bin/node" "/Users/contact/n/bin/npm" "install" "eligrey/canvas-toBlob.js" "--save-dev"
+89 error node v4.0.0
+90 error npm  v2.14.2
+91 error code EISDIR
+92 error errno -21
+93 error syscall read
+94 error eisdir EISDIR: illegal operation on a directory, read
+94 error eisdir This is most likely not a problem with npm itself
+94 error eisdir and is related to npm not being able to find a package.json in
+94 error eisdir a package you are trying to install.
+95 verbose exit [ -21, true ]

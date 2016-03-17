@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ThreeSixty Example</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <style>
+
+            body, 
+            html {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                height: 100%;
+            }
+
+        </style>
+    </head>
+    <body>        
+        <script src="libs/three.min.js"></script>
+        <script src="libs/webvr-polyfill.js"></script>
+        <script src="libs/VRControls.js"></script>
+        <script src="libs/VREffect.js"></script>
+        <script src="build/three-sixty.js"></script>
+        <script>
+
+            // basic setup
+
+            var scene = new THREE.Scene();
+
+            var renderer = new THREE.WebGLRenderer({ antialias: false });
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
+            scene.add(camera);
+
+            var effect = new THREE.VREffect(renderer);
+            var controls = new THREE.VRControls(camera);
+
+            window.addEventListener('resize', onResize, false);
+
+            // ThreeSixty example
+
+            setTimeout(function () {
+
+                var file = threeSixty({
+                    renderer: renderer,
+                    scene: scene
+                });
+
+                file.open();
+
+            }, 1000);
+
+
+            // add lighting
+
+
+            var light1 = new THREE.AmbientLight(0x404040);
+            scene.add(light1);
+
+            var light2 = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+            scene.add(light2);
+
+            var light3 = new THREE.DirectionalLight( 0xffffff, 0.4 );
+            light3.position.set( 0, 1, 0 );
+            scene.add(light3);
+
+            // add skybox
+
+            var boxWidth = 5;
+            var loader = new THREE.TextureLoader();
+            loader.load('img/box.png', onTextureLoaded);
+
+            function onTextureLoaded(texture) {
+                texture.wrapS = THREE.RepeatWrapping;
+                texture.wrapT = THREE.RepeatWrapping;
+                texture.repeat.set(boxWidth, boxWidth);
+                var geometry = new THREE.BoxGeometry(boxWidth, boxWidth, boxWidth);
+                var material = new THREE.MeshBasicMaterial({
+                    map: texture,
+                    color: 0x01BE00,
+                    side: THREE.BackSide
+                });
+                var skybox = new THREE.Mesh(geometry, material);
+                scene.add(skybox);
+            }
+
+            function update () {
+                requestAnimationFrame(update);
+
+                controls.update();
+                // effect.render(scene, camera, timestamp);
+                renderer.render(scene, camera);                    
+            }
+
+            update(performance ? performance.now() : Date.now());
+
+            function onResize () {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
+        </script>
+    </body>
+</html>
