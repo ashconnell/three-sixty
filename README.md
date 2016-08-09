@@ -4,7 +4,7 @@ A [ThreeJS][three] extension for taking equirectangular screenshots of a scene
 
 ## Example
 
-[Basic Example](http://envokevr.github.io/three-sixty/)
+[Basic Example](http://ashconnell.github.io/three-sixty/)
 
 ## Usage
 
